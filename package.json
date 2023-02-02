@@ -1,0 +1,16 @@
+{
+  "name": "@webaverse-studios/eslint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/webaverse-studios/eslint-config",
+  "license": "MIT",
+  "publishConfig": {
+    "@webaverse-studios:registry": "https://npm.pkg.github.com"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8",
+    "eslint-plugin-jsdoc": "*",
+    "eslint-plugin-promise": "*"
+  },
+  "packageManager": "yarn@3.4.1"
+}
