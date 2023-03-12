@@ -71,7 +71,7 @@ module.exports = {
     "jsdoc/match-description": 1,
     "jsdoc/no-bad-blocks": 1,
     "jsdoc/no-missing-syntax": 1,
-    "jsdoc/require-hyphen-before-param-description": 'never',
+    "jsdoc/require-hyphen-before-param-description": [1, 'never'],
     "jsdoc/require-description": 1,
     "jsdoc/require-throws": 1,
     "jsdoc/sort-tags": 1,

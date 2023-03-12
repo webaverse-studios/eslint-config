@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ability to release a new version of the package automagically from GH Actions
 - Enforce jsDoc linting basics
 - Enforce `jsdoc/require-hyphen-before-param-description` rule to `never`
+- Fix hyphen-before-param property
