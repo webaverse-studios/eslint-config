@@ -2,7 +2,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:jsdoc/recommended',
-    'plugin:promise/recommended'
+    'plugin:promise/recommended',
+    'plugin:import/recommended'
   ],
 
   env: {
@@ -18,7 +19,7 @@ module.exports = {
     sourceType: 'module'
   },
 
-  plugins: [ 'jsdoc', 'promise' ],
+  plugins: [ 'jsdoc', 'promise', 'import' ],
 
   rules: {
     'func-names': 0,
@@ -74,6 +75,24 @@ module.exports = {
     "jsdoc/require-description": 1,
     "jsdoc/require-throws": 1,
     "jsdoc/sort-tags": 1,
+
+    // import
+    'import/no-unresolved': [2, {commonjs: true, amd: true}],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "index",
+          "sibling",
+          "parent",
+          "internal",
+          "external",
+          "builtin",
+          "object",
+          "type"
+        ]
+      }
+    ]
   },
 
   settings: {

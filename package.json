@@ -1,6 +1,6 @@
 {
   "name": "@webaverse-studios/eslint-config",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "main": "index.js",
   "repository": "https://github.com/webaverse-studios/eslint-config",
   "license": "MIT",
@@ -9,6 +9,7 @@
   },
   "peerDependencies": {
     "eslint": ">= 8",
+    "eslint-plugin-import": "*",
     "eslint-plugin-jsdoc": "*",
     "eslint-plugin-promise": "*"
   },

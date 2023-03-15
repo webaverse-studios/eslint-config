@@ -9,6 +9,7 @@ __metadata:
   resolution: "@webaverse-studios/eslint-config@workspace:."
   peerDependencies:
     eslint: ">= 8"
+    eslint-plugin-import: "*"
     eslint-plugin-jsdoc: "*"
     eslint-plugin-promise: "*"
   languageName: unknown
