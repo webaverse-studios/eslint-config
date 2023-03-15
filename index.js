@@ -77,22 +77,36 @@ module.exports = {
     "jsdoc/sort-tags": 1,
 
     // import
+    'import/export': 'off',
     'import/no-unresolved': [2, {commonjs: true, amd: true}],
-    "import/order": [
-      "error",
+    'import/order': [
+      'error',
       {
-        "groups": [
-          "index",
-          "sibling",
-          "parent",
-          "internal",
-          "external",
-          "builtin",
-          "object",
-          "type"
-        ]
-      }
-    ]
+        pathGroups: [
+          {
+            pattern: '@webaverse-studios/**',
+            group: 'external',
+            position: 'after',
+          },
+        ],
+        groups: [
+          'type',
+          'builtin',
+          'external',
+          'internal',
+          ['parent', 'sibling'],
+          'index',
+          'object',
+        ],
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+        distinctGroup: true,
+        'newlines-between': 'always',
+        pathGroupsExcludedImportTypes: [],
+      },
+    ],
   },
 
   settings: {
